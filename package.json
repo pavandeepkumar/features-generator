@@ -1,0 +1,17 @@
+{
+  "name": "feature-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "gen-feature": "./bin/generate-feature.js"
+  },
+  "keywords": [
+    "feature-generator",
+    "cli",
+    "generate",
+    "feature"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
