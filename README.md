@@ -32,16 +32,10 @@ feature-generator <feature-name>
 🛠️ How to Use
 Just run:
 
-bash
-Copy
-Edit
 feature-generator user
 This will generate the full feature structure under src/features/user and reusable components inside src/components/ui.
 
 📁 Folder Structure
-pgsql
-Copy
-Edit
 src/
 ├── features/
 │   └── user/
@@ -69,63 +63,14 @@ src/
 │   └── ui/
 │       └── FormInput.tsx
 🧩 Example: ActionForm
-tsx
-Copy
-Edit
+
 <Form {...form}>
   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
     <FormInput form={form} name="id" label="ID" placeholder="Enter ID" />
     <Button type="submit">Submit</Button>
   </form>
 </Form>
-📚 Documentation (TypeDoc)
-This CLI tool is fully documented with TypeDoc.
 
-👉 View it Online
-📘 https://pavandeepkumar.github.io/features-generator
-
-📦 Generate Locally
-bash
-Copy
-Edit
-npm run docs
-This will output static HTML documentation to the /docs folder.
-
-🧪 GitHub Pages Setup
-Make sure you have a typedoc.json in your root:
-
-json
-Copy
-Edit
-{
-  "entryPoints": ["bin/generate-feature.js"],
-  "out": "docs",
-  "includeVersion": true,
-  "name": "feature-generator",
-  "excludePrivate": true,
-  "excludeProtected": true,
-  "excludeExternals": true
-}
-Add a script to your package.json:
-
-json
-Copy
-Edit
-"scripts": {
-  "docs": "typedoc"
-}
-Push to GitHub, then go to:
-
-go
-Copy
-Edit
-GitHub Repo → Settings → Pages → Source: `main` branch, `/docs` folder
-Your docs will be live at:
-
-arduino
-Copy
-Edit
-https://<your-username>.github.io/features-generator
 ⚙️ Requirements
 Node.js >= 14
 
@@ -137,7 +82,7 @@ react-hook-form
 
 zod + @hookform/resolvers
 
-TailwindCSS or ShadCN
+TailwindCSS and ShadCN
 
 TanStack Query
 
@@ -149,14 +94,5 @@ GitHub: @pavandeepkumar
 
 📄 License
 MIT
-
-yaml
-Copy
-Edit
-
----
-
-Let me know if you want me to:
-- Convert it into a `.md` file and export it
-- Add badges (npm version, license, etc.)
-- Or auto-generate this in your CLI tool too (e.g., create README in every feature)
+🔗 Links
+GitHub Repository: https://github.com/pavandeepkumar/features-generator
