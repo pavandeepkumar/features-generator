@@ -1,17 +1,35 @@
 {
   "name": "feature-generator",
   "version": "1.0.0",
+  "description": "A CLI tool to generate feature folders with components, forms, services, hooks, and more.",
   "main": "index.js",
+  "bin": {
+    "feature-generator": "./bin/generate-feature.js"
+  },
   "scripts": {
-    "gen-feature": "./bin/generate-feature.js"
+    "gen-feature": "node ./bin/generate-feature.js"
   },
   "keywords": [
     "feature-generator",
     "cli",
     "generate",
-    "feature"
+    "feature",
+    "scaffolding",
+    "react",
+    "vite",
+    "typescript"
   ],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "author": "Pavandeep Kumar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pavandeepkumar/features-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pavandeepkumar/features-generator/issues"
+  },
+  "homepage": "https://github.com/pavandeepkumar/features-generator#readme",
+  "engines": {
+    "node": ">=14"
+  }
 }
